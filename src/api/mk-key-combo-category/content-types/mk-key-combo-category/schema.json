@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mk_key_combo_categories",
+  "info": {
+    "singularName": "mk-key-combo-category",
+    "pluralName": "mk-key-combo-categories",
+    "displayName": "MK Key Combo Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mk_key_combo_subcategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mk-key-combo-subcategory.mk-key-combo-subcategory",
+      "mappedBy": "mk_key_combo_category"
+    }
+  }
+}

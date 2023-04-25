@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "mk_11_ultimates",
+  "info": {
+    "singularName": "mk-11-ultimate",
+    "pluralName": "mk-11-ultimates",
+    "displayName": "MK 11 Ultimate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mk_characters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mk-character.mk-character"
+    }
+  }
+}

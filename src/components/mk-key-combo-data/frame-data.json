@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_frame_data",
+  "info": {
+    "displayName": "Frame Data",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "startUp": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "integer"
+    },
+    "recovery": {
+      "type": "integer"
+    },
+    "cancel": {
+      "type": "integer"
+    },
+    "hitAdv": {
+      "type": "integer"
+    },
+    "blockAdv": {
+      "type": "integer"
+    },
+    "fBlockAdv": {
+      "type": "integer"
+    }
+  }
+}

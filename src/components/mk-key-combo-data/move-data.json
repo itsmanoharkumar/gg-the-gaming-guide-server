@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_mk_key_combo_data_move_data",
+  "info": {
+    "displayName": "Move Data",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blockDamage": {
+      "type": "float"
+    },
+    "damage": {
+      "type": "float"
+    },
+    "fBlockDamage": {
+      "type": "float"
+    },
+    "moveType": {
+      "type": "enumeration",
+      "enum": [
+        "High",
+        "Mid",
+        "Low",
+        "Overhead",
+        "Throw"
+      ]
+    },
+    "specialNotes": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

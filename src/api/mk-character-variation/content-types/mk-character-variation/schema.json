@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mk_character_variations",
+  "info": {
+    "singularName": "mk-character-variation",
+    "pluralName": "mk-character-variations",
+    "displayName": "MK Character Variation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mk_character": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::mk-character.mk-character",
+      "inversedBy": "mk_character_variations"
+    },
+    "mk_key_combos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mk-key-combo.mk-key-combo",
+      "mappedBy": "mk_character_variation"
+    }
+  }
+}

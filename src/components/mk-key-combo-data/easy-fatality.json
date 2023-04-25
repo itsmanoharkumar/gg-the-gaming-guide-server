@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_mk_key_combo_data_easy_fatalities",
+  "info": {
+    "displayName": "Easy Fatality"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "inputCommands": {
+      "type": "string"
+    }
+  }
+}
