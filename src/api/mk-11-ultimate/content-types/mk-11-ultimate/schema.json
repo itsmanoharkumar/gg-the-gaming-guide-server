@@ -19,6 +19,13 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::mk-character.mk-character"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

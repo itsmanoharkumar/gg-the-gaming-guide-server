@@ -22,7 +22,8 @@
         "Mid",
         "Low",
         "Overhead",
-        "Throw"
+        "Throw",
+        "Unblockable"
       ]
     },
     "specialNotes": {

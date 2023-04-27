@@ -26,6 +26,13 @@
       "relation": "oneToMany",
       "target": "api::mk-key-combo.mk-key-combo",
       "mappedBy": "mk_character_variation"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
