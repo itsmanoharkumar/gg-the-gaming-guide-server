@@ -54,11 +54,11 @@ jobs:
       - name: unzip artifact for deployment
         run: unzip release.zip
 
-#      - name: Azure Login
-#        uses: Azure/login@v1
-#        with:
-#          creds: ${{ secrets.AzureCredentials }}
-#          enable-AzPSSession: true
+      - name: Azure Login
+        uses: Azure/login@v1
+        with:
+          creds: ${{ secrets.AzureCredentials }}
+          enable-AzPSSession: true
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
