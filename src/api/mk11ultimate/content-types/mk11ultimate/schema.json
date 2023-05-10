@@ -22,6 +22,11 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "characters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mkcharacter.mkcharacter"
     }
   }
 }
