@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mkcombos",
+  "info": {
+    "singularName": "mkcombo",
+    "pluralName": "mkcombos",
+    "displayName": "MK Combo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "combo": {
+      "type": "string"
+    },
+    "hasAmplify": {
+      "type": "boolean"
+    },
+    "isEquipped": {
+      "type": "boolean"
+    },
+    "isCancellable": {
+      "type": "boolean"
+    },
+    "character_variation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::mkcharvar.mkcharvar",
+      "inversedBy": "combos"
+    },
+    "subcategory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::mkcombosubcat.mkcombosubcat",
+      "inversedBy": "combos"
+    },
+    "frameData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "mk-key-combo-data.frame-data"
+    },
+    "moveData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "mk-key-combo-data.move-data"
+    },
+    "easyFatality": {
+      "type": "component",
+      "repeatable": false,
+      "component": "mk-key-combo-data.easy-fatality"
+    }
+  }
+}

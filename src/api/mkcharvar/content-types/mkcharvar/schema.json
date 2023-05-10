@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mkcharvars",
+  "info": {
+    "singularName": "mkcharvar",
+    "pluralName": "mkcharvars",
+    "displayName": "MK Character Variation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "character": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::mkcharacter.mkcharacter",
+      "inversedBy": "variations"
+    },
+    "combos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mkcombo.mkcombo",
+      "mappedBy": "character_variation"
+    }
+  }
+}

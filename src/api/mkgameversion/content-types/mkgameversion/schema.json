@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mkgameversions",
+  "info": {
+    "singularName": "mkgameversion",
+    "pluralName": "mkgameversions",
+    "displayName": "MK Game Version"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

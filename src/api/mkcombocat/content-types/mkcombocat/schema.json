@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mkcombocats",
+  "info": {
+    "singularName": "mkcombocat",
+    "pluralName": "mkcombocats",
+    "displayName": "MK Combo Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "subcategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mkcombosubcat.mkcombosubcat",
+      "mappedBy": "category"
+    }
+  }
+}

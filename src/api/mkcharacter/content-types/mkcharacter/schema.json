@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mkcharacters",
+  "info": {
+    "singularName": "mkcharacter",
+    "pluralName": "mkcharacters",
+    "displayName": "MK Character",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "variations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mkcharvar.mkcharvar",
+      "mappedBy": "character"
+    }
+  }
+}

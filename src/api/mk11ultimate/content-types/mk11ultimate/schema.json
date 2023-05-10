@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "mk11ultimates",
+  "info": {
+    "singularName": "mk11ultimate",
+    "pluralName": "mk11ultimates",
+    "displayName": "MK 11 ultimate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
