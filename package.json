@@ -10,12 +10,12 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-documentation": "4.9.2",
-    "@strapi/plugin-i18n": "4.9.2",
+    "@strapi/plugin-documentation": "4.10.4",
+    "@strapi/plugin-i18n": "4.10.4",
     "@strapi/plugin-seo": "^1.8.0",
-    "@strapi/plugin-users-permissions": "4.9.2",
-    "@strapi/strapi": "4.9.2",
-    "better-sqlite3": "8.0.1",
+    "@strapi/plugin-users-permissions": "4.10.4",
+    "@strapi/strapi": "4.10.4",
+    "better-sqlite3": "8.3.0",
     "mysql": "^2.18.1",
     "mysql2": "^3.3.0",
     "pg": "^8.10.0",

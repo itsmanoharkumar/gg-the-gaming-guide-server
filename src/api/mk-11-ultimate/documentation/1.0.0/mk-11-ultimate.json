@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Mk11UltimateListResponse"
+                "$ref": "#/components/schemas/Mk11UltimateResponse"
               }
             }
           }
