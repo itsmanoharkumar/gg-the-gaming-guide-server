@@ -20,6 +20,13 @@
       "relation": "oneToMany",
       "target": "api::mkcombo.mkcombo",
       "mappedBy": "character"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
