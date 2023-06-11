@@ -11,7 +11,7 @@ module.exports = ({env}) => ({
   },
   upload: {
     config: {
-      provider: "strapi-provider-upload-azure-storage",
+      provider: env("NODE_ENV") === 'development' ? "local" : "strapi-provider-upload-azure-storage",
       providerOptions: {
         account: env("STORAGE_ACCOUNT"),
         accountKey: env("STORAGE_ACCOUNT_KEY"),//either account key or sas token is enough to make authentication
