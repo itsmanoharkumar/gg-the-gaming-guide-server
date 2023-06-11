@@ -15,10 +15,10 @@
     "name": {
       "type": "string"
     },
-    "variations": {
+    "combos": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::mkcharvar.mkcharvar",
+      "target": "api::mkcombo.mkcombo",
       "mappedBy": "character"
     }
   }

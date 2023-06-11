@@ -27,10 +27,10 @@
     "isCancellable": {
       "type": "boolean"
     },
-    "character_variation": {
+    "character": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::mkcharvar.mkcharvar",
+      "target": "api::mkcharacter.mkcharacter",
       "inversedBy": "combos"
     },
     "subcategory": {
